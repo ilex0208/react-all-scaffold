@@ -1,0 +1,29 @@
+.login-box {
+  text-align: center;
+}
+
+.g-signin2 {
+  display: inline-block;
+}
+
+.ant-form-inline {
+  display: inline-block;
+
+  .row {
+    margin: 10px;
+  }
+}
+
+.btn-login {
+  display: inline-block;
+  width: 190px;
+  padding: 10px 0;
+  margin: 0 0 20px 10px;
+  font-family: "微软雅黑";
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background: #00A7E1;
+  border: 1px solid transparent;
+  border-radius: 2px;
+}

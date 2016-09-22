@@ -1,0 +1,11 @@
+@import "./../../../style/component.scss";
+
+.tree-selector {
+  margin-bottom: $small-space;
+
+  .sel-tips {
+    float: left;
+    margin: 0.3rem $small-space 0 0;
+    font-size: 14px;
+  }
+}

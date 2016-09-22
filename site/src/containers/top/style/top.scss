@@ -1,0 +1,160 @@
+@import "../../../styles/themes/config";
+$select-color:#2DB7F5;
+$item-height: 4rem;
+$item-line-height: 4rem;
+$item-min-width: 7rem;
+$search-box-width: 26rem;
+
+#header {
+  width: 100%;
+  height: $--top;
+  padding: 0 4%;
+  margin-bottom: 0.2rem;
+  background-color: $header-bgcolor;
+  border-color: $header-bdcolor;
+  transition: opacity 0.5s;
+}
+
+.color-white {
+  color: white;
+}
+
+/* 去除菜单项的底部线 */
+.border-bottom-none {
+  border-bottom: none;
+}
+
+.ant-menu-horizontal {
+  background-color: $header-bgcolor;
+  border-bottom: solid 1px $header-bdcolor;
+
+  > .ant-menu-item {
+    > a {
+      @extend .color-white;
+    }
+  }
+
+  > .ant-menu-submenu {
+    > a {
+      @extend .color-white;
+    }
+  }
+
+  li {
+    &:first-child {
+      @extend .border-bottom-none;
+    }
+
+    &:last-child {
+      @extend .border-bottom-none;
+    }
+  }
+
+}
+
+.relate-new-info {
+  .ant-card-body {
+    a {
+      display: block;
+      float: left;
+      width: 32%;
+      margin-left: 1%;
+    }
+  }
+}
+
+.second-nav-item {
+  margin: 0 auto;
+  font-size: $font-menu-item;
+  border: 0;
+}
+
+#header.home-nav-bottom {
+  background: rgba(255, 255, 255, 0.9);
+  border-bottom-color: #EBEDEE;
+}
+
+#header.home-nav-bottom .search {
+  border-left-color: #EBEDEE;
+}
+
+#header.home-nav-bottom a {
+  color: #666;
+}
+
+.common-item {
+  height: $item-height;
+  min-width: $item-min-width;
+  line-height: $item-line-height;
+  text-align: center;
+  border-bottom-width: 0.3rem;/* 选中时底部线条粗细 */
+}
+
+/** 选择nav下的所有MenuItem */
+#nav {
+  li {
+    @extend .common-item;
+  }
+}
+
+#nav li.ant-menu-item-selected a {
+  font-weight: bold;
+  color: $select-color;
+}
+
+/* logo相关样式 */
+
+#logo {
+  width: $logo-width;
+
+  img {
+    width: 3rem;
+    height: 3rem;
+    margin-top: 0.9rem;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+  }
+
+  span {
+    float: right;
+    margin-top: 1.2rem;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+}
+
+/** 水平翻转 */
+#logoImg:hover {
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+/* 搜索框样式 */
+
+#searchBox {
+  float: left;
+  width: $search-box-width;
+  height: 2rem;
+  padding-left: 3rem;
+  margin: 1.5rem auto 0;
+  line-height: 2rem;
+}
+
+.top-user {
+  float: right;
+}
+
+.top-user > ul {
+  @extend .common-item;
+  border-bottom: none;/* 初始去掉底部线条 */
+}
+
+.top-user ul > li > div {
+  color: $select-color;
+}

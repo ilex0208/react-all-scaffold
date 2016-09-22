@@ -1,0 +1,27 @@
+:global {
+  @import "base";// 导入 _base.scss
+  // Some best-practice CSS that's useful for most apps
+  // Just remove them if they're not what you want
+  html {
+    box-sizing: border-box;
+  }
+  html,
+  body {
+    font-family: "微软雅黑";
+    font-size: 12px;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    width: 100%;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+  }
+}

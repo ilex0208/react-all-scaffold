@@ -1,0 +1,43 @@
+@import "../../styles/themes/config";
+$--padding: 0.3rem;
+
+.header {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+
+  .header-aside {
+    width: 100%;
+    height: $--aside;
+    background: $header-bgcolor;
+
+    .header-user {
+      margin: 0 1rem;
+      line-height: $--aside;
+
+      a {
+        padding: 0.5rem;
+      }
+    }
+
+    .aside-nav-item {
+      float: right;
+      height: $--aside;
+
+      li {
+        line-height: $--aside;
+      }
+    }
+  }
+
+  .header-article {
+    position: relative;
+    padding: 0 0 $--padding;
+
+    .header-nav {
+      position: relative;
+      z-index: 0;
+      height: $--article;
+    }
+  }
+}

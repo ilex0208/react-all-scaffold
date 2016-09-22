@@ -1,0 +1,25 @@
+{
+  "name": "ilex-main",
+  "description": "这里存放ilex前端",
+  "main": "index.js",
+  "authors": [
+    "ilex"
+  ],
+  "license": "MIT",
+  "moduleType": [
+    "es6"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.0.0",
+    "es5-shim": "^4.5.9",
+    "hover": "^2.0.2"
+  }
+}

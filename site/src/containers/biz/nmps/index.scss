@@ -1,0 +1,33 @@
+@import "../style/biz.scss";
+
+%common-biz {
+  height: 100%;
+}
+
+.second-wrapper {
+  @extend %common-biz;
+
+  .second-container {
+    @extend %common-biz;
+    position: relative;
+    padding: $small 0;
+    overflow: hidden;
+    background: white;
+
+    .left-nav {
+      @extend %common-biz;
+      float: left;
+      width: $--left;
+    }
+
+    .right-content {
+      @extend %common-biz;
+      position: relative;
+      left: -1px;
+      padding: 0 $small;
+      overflow: auto;
+      border-left: 1px solid $border-color;
+    }
+
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "parser": "babel-eslint",
+  "extends": [
+    "eslint-config-airbnb",
+    "standard",
+    "standard-react",
+    "eslint:recommended",
+    "plugin:react/recommended"
+  ],
+  "plugins": [
+    "react",
+    "babel"
+  ],
+  "env": {
+    "browser": true,
+    "node": true,
+    "mocha": true,
+    "jest": true,
+    "es6": true
+  },
+  "globals": {
+    "__DEV__": false,
+    "__PROD__": false,
+    "__DEBUG__": false,
+    "__COVERAGE__": false,
+    "__BASENAME__": false
+  },
+  "rules": {
+    "max-len": [0,80,4],
+    "no-multiple-empty-lines": [1,{"max": 2}],
+    "no-redeclare": 2,
+    "no-unreachable": 2,
+    "no-trailing-spaces": 1,
+    "comma-style": [2,"last"],
+    "curly": [2,"all"],
+    "indent": [2, 2, {"SwitchCase": 1}],
+    "semi": [2,"always"],
+    "no-extra-semi": 2,
+    "no-undef": 2,
+    "comma-dangle": [2,"never"],
+    "no-constant-condition": 2,
+    "dot-location": [2,"property"],
+    "space-before-function-paren": [2, "never"],
+    "quotes":[2,"single"],
+    "react/jsx-pascal-case": [2,{"allowAllCaps":true}],
+    "react/prefer-stateless-function":0,
+    "import/no-unresolved": 0,
+    "no-this-before-super": 0,
+    "camelcase": 0,
+    "generator-star-spacing": 0,
+    "no-useless-constructor": 0,
+    "brace-style": 0,
+    "no-extend-native": 0,
+    "no-useless-escape": 0,
+    "no-confusing-arrow": 0,
+    "no-console":0
+  }
+}

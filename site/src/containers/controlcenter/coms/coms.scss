@@ -1,0 +1,128 @@
+$op-height: 3rem;
+$x-icon: 3rem;
+$font-size: 1.3rem;
+
+.operation-common {
+  height: $op-height;
+  line-height: $op-height;
+}
+
+#controlCenter {
+  .control-top-tool {
+    display: inline-block;
+    margin-bottom: 1rem;
+  }
+
+  .contorl-content {
+    .operation-buttons {
+      @extend .operation-common;
+      text-align: center;
+
+      button {
+        position: relative;
+        height: $op-height;
+        min-width: $op-height;
+        overflow: hidden;
+        line-height: $op-height;
+
+        &:hover {
+          .icon-wrapper {
+            top: -$op-height;
+          }
+        }
+
+        .icon-wrapper {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: $op-height;
+          height: $op-height;
+          line-height: $op-height;
+          transition: all 0.2s ease;
+          &:before {
+            content: "";
+          }
+
+          &:after {
+            position: absolute;
+            top: $op-height;
+            left: 0;
+            width: $op-height;
+            height: $op-height;
+            font-size: $font-size;
+            line-height: $op-height;
+          }
+        }
+      }
+
+      a {
+        @extend button;
+      }
+
+      .seperate-line {
+        display: inline-block;
+        width: 0.1rem;
+        height: $op-height;
+        margin-left: 0.5rem;
+        line-height: $op-height;
+        vertical-align: middle;
+        background-color: #2DB7F5;
+      }
+
+      .edit-button {
+        color: #A0C73E;
+
+        .icon-wrapper {
+
+          &:after {
+            content: "编辑";
+          }
+        }
+      }
+
+      .delete-button {
+        color: #F0626F;
+
+        .icon-wrapper {
+
+          &:after {
+            content: "删除";
+          }
+        }
+      }
+    }
+  }
+}
+
+.flat {
+  padding: 0 3px;
+  margin: 2px 0;
+  color: #999;
+  cursor: pointer;
+  background-color: transparent;
+  border: 0 none;
+}
+
+.ant-btn-danger {
+  color: white;
+  background: #FF6C60 none repeat scroll 0 0;
+  border-color: #FF6C60;
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+}
+
+.ant-btn {
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+.x-icon {
+  width: $x-icon;
+  height: $x-icon;
+  font-size: $font-size;
+  line-height: $x-icon;
+  border: 1px solid transparent;
+  border-radius: 100%;
+  box-sizing: content-box;
+}

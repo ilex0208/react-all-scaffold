@@ -1,0 +1,12 @@
+{
+  "/api/": "/",
+  "/top/:resource/:id/show": "/:resource/:id"
+}
+// {
+//   "/api/": "/",
+//   "/sessions/auth":"/loginAuth",
+//   "/sessions/thirdAuth":"/thirdAuth",
+//   "/users/user":"/userList",
+//   "/users/permissions":"/permissions",
+//   "/top/:resource/:id/show": "/:resource/:id"
+// }

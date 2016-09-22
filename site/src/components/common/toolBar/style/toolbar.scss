@@ -1,0 +1,29 @@
+.table-toolbar {
+  display: inline-block;
+  width: 100%;
+  min-height: 2.5em;
+  margin-bottom: 0;
+  background: linear-gradient(#E7F5F3, #6FCDC4);
+  border: #BFECE9 1px solid;
+  border-bottom: none;
+  border-image-width: 0;
+
+  .title {
+    float: left;
+    margin: 3px 15px 5px 10px;
+    font-family: "微软雅黑";
+    font-size: 16px;
+    color: #007A77;
+
+    img {
+      position: relative;
+      margin-right: 10px;
+      vertical-align: middle;
+      border: 0 none;
+    }
+  }
+  
+  > div {
+    padding: 0;
+  }
+}

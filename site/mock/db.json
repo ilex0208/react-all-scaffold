@@ -1,0 +1,492 @@
+{
+  "navs": {
+    "leftMenu": {
+      "id": "left",
+      "navconfig": {
+        "theme": "light",
+        "navStyle": "third-nav-item",
+        "openKeys": "",
+        "defaultOpenKeys": "",
+        "defaultSelectedKeys": "",
+        "currentSelectKey": "",
+        "menuMode": "inline"
+      },
+      "menus": [
+        {
+          "itemKey": "nmpsIndex",
+          "linkTo": "/nmps/center",
+          "itemIcon": "user",
+          "itemText": "XX中心"
+        },
+        {
+          "subKey": "basicInfo",
+          "subIcon": "appstore",
+          "subText": "基础信息",
+          "item": [
+            {
+              "itemKey": "basic-1",
+              "linkTo": "/nmps/meter",
+              "itemText": "XX信息"
+            },
+            {
+              "itemKey": "basic-2",
+              "linkTo": "/nmps/site",
+              "itemText": "XX信息"
+            },
+            {
+              "itemKey": "basic-3",
+              "linkTo": "/nmps/line",
+              "itemText": "XX信息"
+            },
+            {
+              "itemKey": "basic-4",
+              "linkTo": "/nmps/other",
+              "itemText": "其它信息"
+            }
+          ]
+        },
+        {
+          "subKey": "statusMonitor",
+          "subIcon": "pie-chart",
+          "subText": "XX监控",
+          "item": [
+            {
+              "itemKey": "status-1",
+              "linkTo": "/nmps/status",
+              "itemText": "监控1"
+            },
+            {
+              "itemKey": "status-2",
+              "linkTo": "/nmps/status",
+              "itemText": "监控2"
+            },
+            {
+              "itemKey": "status-3",
+              "linkTo": "/nmps/#",
+              "itemText": "监控3"
+            },
+            {
+              "itemKey": "status-4",
+              "linkTo": "/nmps/#",
+              "itemText": "监控4"
+            }
+          ]
+        },
+        {
+          "subKey": "onlineMonitor",
+          "subIcon": "bar-chart",
+          "subText": "XX监测",
+          "item": [
+            {
+              "itemKey": "online-1",
+              "linkTo": "/nmps/acanalog",
+              "itemText": "XXX信息"
+            },
+            {
+              "itemKey": "online-2",
+              "linkTo": "/nmps/snmpdev",
+              "itemText": "XXX监控"
+            },
+            {
+              "itemKey": "online-3",
+              "linkTo": "/nmps/#",
+              "itemText": "其它监测1"
+            },
+            {
+              "itemKey": "online-4",
+              "linkTo": "/nmps/#",
+              "itemText": "其它监测2"
+            }
+          ]
+        },
+        {
+          "subKey": "onlineCheck",
+          "subIcon": "hdd",
+          "subText": "在线XXX",
+          "item": [
+            {
+              "itemKey": "check-1",
+              "linkTo": "/nmps/autocheck",
+              "itemText": "XX校验"
+            },
+            {
+              "itemKey": "check-2",
+              "linkTo": "/nmps/handscheck",
+              "itemText": "XX校验"
+            },
+            {
+              "itemKey": "check-3",
+              "linkTo": "/nmps/#",
+              "itemText": "校验3"
+            },
+            {
+              "itemKey": "check-4",
+              "linkTo": "/nmps/#",
+              "itemText": "校验44"
+            }
+          ]
+        }
+      ]
+    },
+    "topHeader": {
+      "id": "nav",
+      "navconfig": {
+        "theme": "dark",
+        "navStyle": "second-nav-item",
+        "openKeys": "",
+        "defaultOpenKeys": "",
+        "defaultSelectedKeys": "",
+        "currentSelectKey": "",
+        "menuMode": "horizontal"
+      },
+      "menus": [
+        {
+          "itemKey": "home",
+          "linkTo": "/home",
+          "itemIcon": "home",
+          "itemText": "首页"
+        },
+        {
+          "itemKey": "nmps",
+          "linkTo": "/nmps",
+          "itemIcon": "tags",
+          "itemText": "XX平台"
+        },
+        {
+          "itemKey": "operation",
+          "linkTo": "/operation",
+          "itemIcon": "notification",
+          "itemText": "XX中心"
+        },
+        {
+          "itemKey": "analysis",
+          "linkTo": "/analysis",
+          "itemIcon": "area-chart",
+          "itemText": "XX分析"
+        },
+        {
+          "itemKey": "core",
+          "linkTo": "/core",
+          "itemIcon": "setting",
+          "itemText": "系统管理"
+        }
+      ]
+    },
+    "loginaside": {
+      "id": "loginaside",
+      "navconfig": {
+        "theme": "dark",
+        "navStyle": "aside-nav-item",
+        "openKeys": "",
+        "defaultOpenKeys": "",
+        "defaultSelectedKeys": "",
+        "currentSelectKey": "",
+        "menuMode": "horizontal"
+      },
+      "menus": [
+        {
+          "itemKey": "home",
+          "linkTo": "/home",
+          "itemIcon": "home",
+          "itemText": "首页"
+        },
+        {
+          "itemKey": "alarm",
+          "linkTo": "/alarm",
+          "itemIcon": "notification",
+          "itemText": "68"
+        },
+        {
+          "itemKey": "services",
+          "linkTo": "/services",
+          "itemIcon": "area-chart",
+          "itemText": "XX服务"
+        },
+        {
+          "itemKey": "workorder",
+          "linkTo": "/workorder",
+          "itemIcon": "setting",
+          "itemText": "XXX服务2"
+        },
+        {
+          "itemKey": "help",
+          "linkTo": "/help",
+          "itemIcon": "area-chart",
+          "itemText": "帮助与文档"
+        },
+        {
+          "itemKey": "phone",
+          "linkTo": "/phone",
+          "itemIcon": "setting",
+          "itemText": "手机APP"
+        }
+      ]
+    },
+    "notloginaside": {
+      "id": "notloginaside",
+      "navconfig": {
+        "theme": "dark",
+        "navStyle": "aside-nav-item",
+        "openKeys": "",
+        "defaultOpenKeys": "",
+        "defaultSelectedKeys": "",
+        "currentSelectKey": "",
+        "menuMode": "horizontal"
+      },
+      "menus": [
+        {
+          "itemKey": "home",
+          "linkTo": "/home",
+          "itemIcon": "home",
+          "itemText": "首页"
+        },
+        {
+          "itemKey": "help",
+          "linkTo": "/help",
+          "itemIcon": "area-chart",
+          "itemText": "帮助与文档"
+        },
+        {
+          "itemKey": "phone",
+          "linkTo": "/phone",
+          "itemIcon": "setting",
+          "itemText": "手机APP"
+        }
+      ]
+    }
+  },
+  "cores": {
+    "id": "corenavs",
+    "navconfig": {
+      "theme": "dark",
+      "navStyle": "aside-nav-item",
+      "openKeys": "",
+      "defaultOpenKeys": "",
+      "defaultSelectedKeys": "",
+      "currentSelectKey": "",
+      "menuMode": "horizontal"
+    },
+    "menus": [
+      {
+        "itemKey": "comscenter",
+        "linkTo": "/core/coms",
+        "itemIcon": "notification",
+        "itemText": "XXX管理"
+      },
+      {
+        "itemKey": "addcoms",
+        "linkTo": "/core/addCom",
+        "itemIcon": "notification",
+        "itemText": "添加XXX"
+      },
+      {
+        "itemKey": "editcoms",
+        "linkTo": "/core/editCom/:id",
+        "itemIcon": "setting",
+        "itemText": "编辑XXX"
+      }
+    ]
+  },
+  "tabtable": {
+    "daKey": "load",
+    "tabInfos": [
+      {
+        "tabType": "book",
+        "displayName": "负荷",
+        "key": "load",
+        "tabContent": {
+          "tableColumns": [
+            {
+              "title": "地区名称",
+              "width": "25%",
+              "dataIndex": "areaName"
+            },
+            {
+              "title": "当前负荷",
+              "width": "25%",
+              "dataIndex": "currentLoad"
+            },
+            {
+              "title": "计算负荷",
+              "width": "25%",
+              "dataIndex": "calcLoad"
+            },
+            {
+              "title": "差值",
+              "width": "25%",
+              "dataIndex": "differencValue"
+            }
+          ],
+          "dataList": [
+            {
+              "key": 1,
+              "areaName": "XX市",
+              "currentLoad": "--",
+              "calcLoad": "待确定",
+              "differencValue": "待确定"
+            },
+            {
+              "key": 2,
+              "areaName": "XX市",
+              "currentLoad": "--",
+              "calcLoad": "待确定",
+              "differencValue": "待确定"
+            }
+          ]
+        }
+      },
+      {
+        "tabType": "search",
+        "displayName": "误差",
+        "key": "error",
+        "tabContent": {
+          "tableColumns": [
+            {
+              "title": "地区名称",
+              "width": "34%",
+              "dataIndex": "areaName"
+            },
+            {
+              "title": "有功误差",
+              "width": "33%",
+              "dataIndex": "powerError"
+            },
+            {
+              "title": "无功误差",
+              "width": "33%",
+              "dataIndex": "unPowerError"
+            }
+          ],
+          "dataList": [
+            {
+              "key": 1,
+              "areaName": "XX市",
+              "powerError": "23.25%",
+              "unPowerError": "12.33%"
+            },
+            {
+              "key": 2,
+              "areaName": "XX市",
+              "powerError": "--",
+              "unPowerError": "--"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "login": {
+    "userName": "ilex",
+    "password": "1231421"
+  },
+  "userList": [
+    {
+      "id": 1,
+      "userName": "ilex",
+      "password": "123456",
+      "role": "ADMIN"
+    },
+    {
+      "id": 2,
+      "userName": "ilex2",
+      "password": "123456",
+      "role": "ADMIN"
+    },
+    {
+      "id": 3,
+      "userName": "ilex3",
+      "password": "123456",
+      "role": "TEST"
+    },
+    {
+      "id": 4,
+      "userName": "ilex4",
+      "password": "123456",
+      "role": "SITE"
+    }
+  ],
+  "permissions": [
+    {
+      "id": 1,
+      "userId": 1,
+      "permissions": [
+        {
+          "pid": "1",
+          "pname": "登陆"
+        },
+        {
+          "pid": "2",
+          "pname": "XX监测"
+        },
+        {
+          "pid": "3",
+          "pname": "XX信息"
+        },
+        {
+          "pid": "4",
+          "pname": "XXX告警"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "userId": 2,
+      "permissions": [
+        {
+          "pid": "1",
+          "pname": "登陆"
+        },
+        {
+          "pid": "2",
+          "pname": "在线监测"
+        },
+        {
+          "pid": "3",
+          "pname": "基础信息"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "userId": 3,
+      "permissions": [
+        {
+          "pid": "1",
+          "pname": "登陆"
+        },
+        {
+          "pid": "2",
+          "pname": "XXX监测"
+        },
+        {
+          "pid": "3",
+          "pname": "告警"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "userId": 4,
+      "permissions": [
+        {
+          "pid": "1",
+          "pname": "登陆"
+        },
+        {
+          "pid": "2",
+          "pname": "告警"
+        }
+      ]
+    }
+  ],
+  "loginAuth": {
+    "userName": "q1q",
+    "password": "124124124"
+  },
+  "thirdAuth": {
+    "userId": "1",
+    "userName": "ilex",
+    "password": "123456",
+    "api_key": "abcdefg"
+  }
+}

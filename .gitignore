@@ -1,0 +1,5 @@
+node_modules/
+site/node_modules
+site/dist
+
+/site/node_modules

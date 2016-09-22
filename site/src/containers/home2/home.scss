@@ -1,0 +1,67 @@
+/** 主体显示样式 */
+#banner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.banner-user {
+  height: 100%;
+}
+
+.content-padding {
+  padding: 0.5rem 0 0 1rem;
+}
+
+.banner-user-elem {
+  position: relative;
+  overflow: hidden;
+  color: white;
+  text-align: center;
+
+  .image-tweenone-wrapper {
+    @extend .content-padding;
+    position: relative;
+    float: left;
+    width: 65%;
+
+    img {
+      top: 50%;
+      height: 511px;
+    }
+  }
+
+  .text-wrapper {
+    @extend .content-padding;
+    position: relative;
+    left: 10px;
+    float: left;
+    width: 35%;
+
+    h2 {
+      font-size: 32px;
+      font-weight: normal;
+      color: #666;
+    }
+
+    p {
+      margin: 10px 0 20px;
+      font-size: 16px;
+      line-height: 28px;
+      color: #999;
+    }
+
+    .desc-left {
+      padding-left: 10%;
+    }
+  }
+
+  .banner-user-title {
+    top: 40%;
+    font-size: 22px;
+  }
+
+  .banner-user-content {
+    top: 40%;
+  }
+}

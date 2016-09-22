@@ -1,0 +1,39 @@
+/**
+ * 设置底部、顶部和左侧高度
+ * 理解em 和 rem区别：
+ *    关键词：
+ *    em是相对于父元素的字体大小。事实上，根据W3标准 ，它们是相对于使用em单位的元素的字体大小。
+ *           rem是相对于根元素<html>
+ *
+ * 1、当使用 rem 单位，他们转化为像素大小取决于页根元素的字体大小，即 html 元素的字体大小。 根元素字体大小乘以你 rem 值。
+ *    例如，根元素的字体大小 16px，10rem 将等同于 160px，即 10 x 16 = 160。
+ *
+ * 2、当使用em单位时，像素值将是em值乘以使用em单位的元素的字体大小。
+ *    例如，如果一个 div 有 18px 字体大小，10em 将等同于 180px，即 10 × 18 = 180。
+ *
+ * 教程见：http://webdesign.tutsplus.com/zh-hans/tutorials/comprehensive-guide-when-to-use-em-vs-rem--cms-23984
+ *
+ */
+// 前提： html元素字体默认 12px
+$--top: 4.5rem;// 4.5X12px=54px
+$--left: 15rem;// 15X12px=180px
+
+// 布局
+$--header: 12rem;
+$--aside: 3rem;
+$--article: 9rem;
+
+$small: 1rem;// 1*12px=12px
+$middle: 2rem;// 2*12px=24px
+$large: 3rem;// 3*12px=36px
+
+// header 常用变量
+$header-bgcolor: #282828;
+$header-bdcolor: #080808;
+$font-menu-item: 14px;
+$logo-width: 10rem;
+
+// 模块参数
+$small-space: 0.5rem;// 建议单个完整模块内部之间的间隔
+$middle-space: 1rem;// 两个模块之间的默认间隔
+$large-space: 2rem;// 两个模块之间的间隔

@@ -1,0 +1,67 @@
+@import "config";
+// 设置一些常规方法
+@mixin postion0 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@mixin postion($top:0, $left:0) {
+  position: absolute;
+  top: $top;
+  left: $left;
+  width: 100%;
+  height: 100%;
+}
+
+@mixin inline {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+// 常用变量
+$primary-color: #333;
+$top-color: #186659;
+$core-bg: linear-gradient(#CAEFEE, white);
+$border-color: #E9E9E9;
+
+/* 左侧导航固定宽度 */
+#leftMenu {
+  position: absolute;
+  top: $--top;
+  bottom: 0;
+  left: 0;
+  width: $--left;
+  background: $primary-color;
+}
+
+#maincontent {
+  @include postion($--top);
+  margin: 0;
+  overflow: hidden;
+  background: $core-bg;
+  border: 1px solid #CCC;
+  border-radius: 5px;
+}
+
+/* 右侧宽度自适应 */
+#rightWrap {
+  position: absolute;
+  top: $--top;
+  right: 0;
+  bottom: 0;
+  left: $--left;
+  width: calc(99.99% * 1 - 15rem);
+  height: calc(99.99% * 1 - 4.5rem);
+  padding: 10px 10px 0;
+  overflow-y: auto;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+
+  .ant-menu-submenu {
+    float: right;
+  }
+}
