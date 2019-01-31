@@ -25,7 +25,6 @@
 >存放文档
 
 
-<br/>
 ### npm需要全局安装的组件
 
 ***
@@ -34,7 +33,6 @@
 *  node-sass   ``scss样式构建``,安装教程详见 "node-sass安装教程.md"
 npm install -g webpack@1.13.1 webpack-dev-server@1.14.1 node-sass@3.8.0
 
-<br/>
 ### vistual code需要安装的组件
 ***
 
